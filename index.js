@@ -21,6 +21,7 @@ async function convertFile(csvFilePath) {
 		};
 	});
 
+	// console.log(newJsonArray);
 	const CSV_OUTPUT = `${csvFilePath.split(".")[0]}.output.csv`;
 	// create csv string
 	const csvOutput = await parseAsync(newJsonArray);
